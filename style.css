@@ -1,0 +1,41 @@
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: 100vw;
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+    gap: 1vmin;
+    grid-template-columns: 17vmin 5vmin 15vmin 17vmin 6vmin;
+    grid-template-rows: 15vmin 8vmin 11vmin 3vmin 16vmin;
+    animation: animate-columns-rows 10s ease-in-out infinite alternate;
+}
+
+@keyframes animate-columns-rows{
+    0%{
+        grid-template-columns:9vmin 12vmin 13vmin 7vmin 60vmin ;
+        grid-template-rows: 15vmin 8vmin 12vmin 33vmin 16vmin;
+    }
+    25%{
+        grid-template-columns: 10vmin 5vmin 55vmin 17vmin 6vmin;
+        grid-template-rows: 12vmin 12vmin 11vmin 3vmin 16vmin;
+    }
+    50%{
+        grid-template-columns:12vmin 6vmin 64vmin 12vmin 10vmin ;
+        grid-template-rows: 17vmin 16vmin 40vmin 13vmin 19vmin;
+    }
+    75%{
+        grid-template-columns: 6vmin 18vmin 25vmin 13vmin 6vmin;
+        grid-template-rows: 13vmin 8vmin 60vmin 13vmin 6vmin;
+    }
+    100%{
+        grid-template-columns: 10vmin 8vmin 15vmin 5vmin 3vmin;
+        grid-template-rows:5vmin 18vmin 12vmin 13vmin 6vmin ;
+    }
+    
+}
+
